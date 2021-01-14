@@ -1,0 +1,125 @@
+
+<div class="container">
+    
+   
+    <div class="modal" id="myModal">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <h5 class="modal-title" style="text-align:center">Register</h5>
+    <div class="modal-body">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+    <div class="form-group col">
+    <label >Title</label>
+    <select formControlName="title"  style=" background-color: antiquewhite;" id="s" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+    <option value=""></option>
+    <option value="Mr">Mr</option>
+    <option value="Mrs">Mrs</option>
+    <option value="Miss">Miss</option>
+    <option value="Ms">Ms</option>
+    </select>
+    <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+    <div *ngIf="f.title.errors.required">Title is required</div>
+</div>
+</div>
+    <div class="form-group col">
+    <label>Name</label>
+    <input type="text" id="k" style=" background-color: antiquewhite;" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+    <div *ngIf="f.name.errors.required">Name is required</div>
+    </div>
+    </div>
+    </div>
+
+
+    
+    
+    <div class="form-group ">
+        <label>Password</label>
+        <input type="password"  formControlName="password" style=" background-color: antiquewhite;" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">password is required</div>
+            
+        </div>
+    </div>
+    
+            <div class="form-group ">
+                <label>Email</label>
+                <input type="text" formControlName="email"style=" background-color: antiquewhite;" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                   
+                </div>
+            </div>
+
+           
+            <div class="form-group "id="l">
+                <label>DOB</label>
+                <input type="date" formControlName="dOB" style=" background-color: antiquewhite;" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.dOB.errors }" />
+                <div *ngIf="submitted && f.dOB.errors" class="invalid-feedback">
+                    <div *ngIf="f.dOB.errors.required">DOB is required</div>
+                </div>
+            </div>
+            <div class="form-row" >
+            <div class="form-group">
+                <label>Country</label>
+                <select formControlName="country" id="u1" style=" background-color: antiquewhite;"class="form-control" (change)="getState()" [ngClass]="{ 'is-invalid': submitted && f.country.errors }" >
+                    <option  *ngFor="let a of cc" [value]="a.cname">{{a.cname}}</option>
+                   
+                    </select>
+                    <div *ngIf="submitted && f.country.errors" class="invalid-feedback">
+                        <div *ngIf="f.country.errors.required">Country is required</div>
+                        </div>
+                     </div>
+
+            <div class="form-group">
+                <label>State</label>
+                    <select formControlName="state" id="u2"style=" background-color: antiquewhite;" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.state.errors }" >
+                        <option [value]="s.sname" *ngFor="let s of State">{{s.sname}}</option>
+                       
+                        </select>
+                        <div *ngIf="submitted && f.state.errors" class="invalid-feedback">
+                          <div *ngIf="f.state.errors.required">State is required</div>
+                        </div>
+                    </div>
+
+                </div>
+          <div class="form-group "id="l">
+            <label>Phone_no</label>
+            <input type="text" maxlength="10" minlength="10"style=" background-color: antiquewhite;" formControlName="phone_no" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phone_no.errors }" >
+            <div *ngIf="submitted && f.phone_no.errors" class="invalid-feedback">
+                <div *ngIf="f.phone_no.errors.required">Phone_no is required</div>
+            </div>
+        </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input type="text" formControlName="address" style=" background-color: antiquewhite;" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+            <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                <div *ngIf="f.address.errors.required">Address is required</div>
+            </div>
+        </div>
+        <div class="form-group" id="l">
+          <label>PinCode</label>
+          <input type="text" maxlength="6" minlength="6" style=" background-color: antiquewhite;"formControlName="pincode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.pincode.errors }" />
+          <div *ngIf="submitted && f.pincode.errors" class="invalid-feedback">
+              <div *ngIf="f.pincode.errors.required">PinCode is required</div>
+          </div>
+      </div>
+            <div class="form-group form-check">
+                <input type="checkbox"style=" background-color: antiquewhite;" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" >
+                <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
+                <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary mr-1">Register</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="onReset(name)">Cancel</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+
+
+

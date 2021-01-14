@@ -1,0 +1,25 @@
+<div >
+<h5>To View Your Bookings History Click Here==><button (click)="mybook()" data-toggle="modal" data-target="#mymodal">My Bookings</button><br></h5>
+<br>
+<div class="modal" id="mymodal">
+    <div class="card ">
+        
+            <div *ngFor="let t of temp">
+                
+        <div class="card-body text-center">
+            <img [src]="t.img" >
+         From<p class="card-text"> {{t.fromd}}</p>
+         To<p class="card-text"> {{t.tod}}</p>
+          Tickets Booked<p class="card-text"> {{t.nos}}  </p>
+          <div class="form-group ">
+         
+           
+          <button (click)="canceltk(t.bookingid)" id="batcss"> Cancel</button> 
+       
+   </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+ 

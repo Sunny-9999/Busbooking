@@ -1,0 +1,87 @@
+
+  <div  class="container">
+    
+    <form [formGroup]="BusBookingForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+ 
+     <div class="form-group "  >
+         
+         <div id="m">
+            <h6>From:</h6>
+         <input type="text" id="m" formControlName="fromd"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fromd.errors }" />
+         <div *ngIf="submitted && f.fromd.errors" class="invalid-feedback">
+             <div *ngIf="f.fromd.errors.required">From is Invalid</div>
+            
+         </div>
+        </div>
+     </div>
+     <div class="form-group ">
+         <div id="s">
+        <h6 id="s">To: </h6>
+         <input type="text" formControlName="tod" id="s" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.tod.errors }" />
+         <div *ngIf="submitted && f.tod.errors" class="invalid-feedback">
+             <div *ngIf="f.tod.errors.required">   To is Invalid</div>
+            
+         </div>
+        </div>
+     </div>
+     <div class="form-group "id="u">
+        <h6>Date:</h6>
+        <input type="date" formControlName="datejrny" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.datejrny.errors }" />
+        <div *ngIf="submitted && f.datejrny.errors" class="invalid-feedback">
+            <div *ngIf="f.datejrny.errors.required">DOB is required</div>
+        </div>
+    </div>
+
+
+           
+    
+
+     <div class="form-group ">
+         <br>
+         
+         <button (click)="searchbtn(datejrny)" id="s2"   data-toggle="modal" data-target="#mymodal" [disabled]="Loading" >
+         Search
+     </button>
+      
+     </div>
+
+ 
+
+
+<div class="modal" id="mymodal">
+     <div class="card ">
+         <div *ngIf="temp !=null ">
+            
+             <div *ngFor="let t of temp" class="form-row"id="bg">
+                 
+         <div class="card text-center" id="a" style="border-width: 2em; background-image: url();">
+            <img [src]="t.img" >
+            <div class="card-body ">      
+          <h5>Buss Id:</h5> <p class="card-text"> {{t.bus_id}}</p>
+           <h5>Bus Name:</h5><p class="card-text"> {{t.busname}}</p>
+           <h5>Tickets Available:</h5><p class="card-text"> {{t.nop}}  </p>
+           <div class="form-group "id="sai">
+            <h5>Number of seats</h5>
+
+            <input type="number" id="sai1" formControlName="nos"   class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nos.errors }" />
+           
+            <button (click)="bookaticket(t.bus_id,t.nop)" id="batcss">Book Tickets</button>  
+                
+            </div>
+        </div>
+        </div>
+
+          
+        </div>
+    
+</div>
+         </div>
+     </div>
+    </div>
+    </form>
+</div>
+
+
+
+

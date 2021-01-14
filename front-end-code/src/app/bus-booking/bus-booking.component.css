@@ -1,0 +1,75 @@
+#m
+{
+    width: 252px;
+    
+    margin-left: 0em;
+  
+}
+#sai1{
+    width: 200px;
+    margin-left: 38em;
+    background-color: rgb(236, 230, 220);
+
+}
+
+
+#s
+{
+    width: 252px;
+    align-self:right;
+    margin-left: 3em;
+}
+#s1
+{
+    width: 252px;
+}
+#batcss
+{
+    float: right;
+    background-color: blueviolet;
+    width: 10em;
+    height: 3em;
+    
+}
+#s2
+{
+    background-color:rgba(201, 42, 42, 0.61);
+    margin-left: 1em;
+    width: 102px;
+    height: 40px;
+}
+#u
+{
+    width: 252px;
+    margin-left: 9em;
+    
+  
+}
+input {
+    background-color:white;
+
+}
+figure{
+    width: 2000px;
+    height:500px;
+    background-color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+    
+#k {
+    margin-top: 70px;
+}
+img{
+    width: 90em;
+    height: 20em;
+}
+
+
+

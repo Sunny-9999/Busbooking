@@ -1,0 +1,706 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./$$_lazy_route_resource lazy recursive":
+/*!******************************************************!*\
+  !*** ./$$_lazy_route_resource lazy namespace object ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n    <div class=\"imgcontainer\">\n      <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAACiCAMAAADiKyHJAAABDlBMVEX////NICYkHiD//v/MFR3KAA/KAADsr6/ZaGnNHSMAAADMEBn8///00tXWTFH46urQLjP12Nnppqn09PSBfn/79vYWDhH1z8/YYWTQMjnROz3aXWD8//sOAATHxcbyyMpcWlv44+RST1AdFhjff4O9vb1TVFbKAAfr6+vgh4lKS03FAADOAADklJbOzs6oqKjtubzUQ0jac3fppaPk4+N5dXaWlpbhhopjZGabm5vdeHrVS0/nlJPVJjHz3ODchoXovbvdaHH82N3zw8f88PTWT03qrbLokZk9PT0yLC4rJCbsqLHttrvgsLHDpKWdhoOCWFmINjmrKzCLRUeVd3ppd3pFTU2pNjtIREqzs7Pn+uFaAAAU5ElEQVR4nO1dCXfiuJa2y5ZBkcFmcVhMAiQEBwIJS7aCIkVPUqmuftUzb5nX0/n/f2QkG7C8YRsvhPT7Tp0+TTC29PnqbrqSGGb/4ERG1P9H1P8pUjvXfB5lMsVhrzPLZtX8fDyuyfKCtUGWa+NxXlWzk9nDcJrJjJ6bhbbEUXcWOfcnfhA0pEJzlJkOZ9V5nQUCgaYBhPA/xPNQh520FchXPAa+GEPT9B9DOZ/tTIuj54Ik7rtvcYJ0Rmw0XgpNQpZa4weEKYBp4r0ZCgPCJSES0ziYfyl8DPI4qTIqDif5Bbga6GLFx0HVFhKRUM8c6IDV37giVTJYvGQsXES2YpGsoNwNxhXm4MROUZ5Gw6/VOtAHI58eXRbqhJ6ybyICoYHfL6dIo+LXak3DjCU9Hv2hqZL47oVOeWmPhpNvcHD1DhhbA9Wf9s2LF/AbFbGUDWd5KKSsxYKAl9vvUtFxUqHYU2VNIz7FvklyBV9r75skGuQlYs5m+cV7UGVbwc9f3o/ISU+ZjsoK750zA2Cyb7oIRKbdfMBG8zA4M6AN98eX4YQrhcxsDrUD4swAqOyPOaZUyGTrPHh3ZjMI+HrqjvAq3COkIe29Gk5/gF7axGEvTVp26hAc2ui0AoJCepTp/y1M1cVhDk8r+HxqxGFTUOnU0YGL2gbCKHnCdL2mPE8We0trJAAoc8kn1EVmmSX2c9+djRVakWkkSBnRbJUZZm3f/YwdECZHG3kl0pAVPh5rBGCaFG1Y2pb5D8oaBuQTmjYUlSE/+DjWwAmwTCRL0p4JYN9dSxZQjp81sT0ZfDAr6oJBLl7SdGn7yGN0DfRLvMQpw4/ms3lBizVJsqyBPdDmWRWS5EPj9EiUjpA0bTxag98EvhB5AWjJBXqwFhdtYnsMkn3JWLN8fyqsMVx5ibxa8MTyS5VNagxocZXiFBbJGwVQNJ+XWXk8fHbb22Sk6TgZ6tCXeHhryykYU3fifHx4pcgnYbBicuWUeRpOyE7E4cFQS6JxIAZXrsEMtQSa5mzrbsQx0jgB5kAverzKSem4IbsSx7QX8bcP1mII9HvpJEJ2Jo4ZJTAiUPRZGyWlcGF34jg1/sFKt2ZHZFLRcAGI83atRkLsrYlhuiuB1+kKX+K4StNAzh5KluQEBoUUkTdlEH+bXOFLnMJqQAeSO5ZeiUw2fjUMmkw085CE5nVvqS9xG7mCgKV1t8gM48+toodoUZeYkk0NRRz+Ar7QrfwZP3FwHok3hhnvoj62rBLyRCjiWNShG/kcw7CwLW2CbDuSyImeBgvykHfaDYjAlYAW4/oCCFcBPGd9tZXe4HDEQY1uZSUacRBpAwHW6jUWN15Y1cBgJRcFbWHTQWMpmdF4HghsXlXHQLNwx2tg8vt/NYx1fkpzWhtsGeiYY0GT8V3UMRQ0pIUijhXoaDKSIoZAy46MymkyPdDM9MYC7hb6Hom4Z6B3EUF5rE6+FjMj0noEsqOVjmlT3go/yC9tPy9MvGYpIECT5abQ+6XZG1Bp1wDEaXR1TBFs7moC2p63gcWjh2BRdGbKmxOeVyMRR9xf+E1vvjHka5DXvkv6sgWGZAC+bmQK1J3CLTLtvJvihlp9xOm/18GR+jpqiUYA4sAr9ZjeJvHZ3qBQpy/nVWnzTY66EdQeGqIjLhVxC2At0swDMfS0F92oCVWLE9VB6xYMPZTpUHOoOh4Wt2reAMQNzLfU2DjpfJW63Eac+Y1k3ghCj7JfLMPRwtUZbyNu/GyNfVbEebYAu5EjO3PAb+lUAONwRa3naK/T+luJWz9RNImDC6/4ABOnjVzayL1d6Lje1nwC1U6cXaoN4rDx3nITWywJZpyPpQ9AHD2fUlzbhrDEAc9WE4lzKwguHRm4294BhslDn4BXJ47wtiVAEYu01QMd7ytX8CdOoFScUl8boJDECSPPVmPieNXl9ZaOPhEcl/26UA9EHKj4iBAVTKKqn7wFIA6o1Fj/sjE/4YiD37xbgImDYxfrEJg4mQ1AHBj6BcTSZnIRypRa8fqVB3GIN4DdIapPRdNshyNOePZuMCEOPjnfcGDi2ADE8Xmq+JNjXp6HnVmnaLFJYnGt5izVySL3VHyYzR5e21Zj4U5cVdVRzX6npj0b9IxIOOKQeXNRaX7Hje59yeQkhbSFvA23hTZRiLOKCSZOswzUoUzWo+KoIE+7detxhqq0Ua6o+oYFSAPqkr6pfyJz9UFZzmn1GYo42kPJja+ALsrgis/3KgrzSojLOPkoHZ0TnOwkcVhHSe2ntqQPlw6iGyAq2U2pBC/Q07qrzI9Gv8UM2IQV/IAefcFS52JzxloDk1DEUbPOEmvqYIhDwfGQ1BIgFytW+vWMoH+/pV063Ihrf1FlHJkv5tmMgokTltR3E1oABHM5ntg23BY6WWMNzQXq/QYjjmtIoyqgmQtHnBnjPdlSGVBfv0ffbYOSosM3yekkTprwgOQzSNivyZkZkilReba2QDDly5hRASaVnPjNIi27TdaIeLRTabodiVOgW0QdNiXH3d5e316uPjiIa8p0wgMiFs3MXjBzW2Q9Nr8qkt8JlKGq2NziUMRRCm9qBu3hiKOWp47cFonCmktcoZQuMT/Xt8Yn48Mb+XRd7n86OTr+8XjqTpyj4oDqsFiwZ++E5iaALpB0AR04f0Fe9/EgbtgzgE0fdRtRbLI7OcA8tSJalF47cxYIGqKLx6AzsCj9+PXHb+fHq8jh+sePT+cnR0enzO3d8fE5sbfkO9LohY24hmNCSaDunrFnQlBnQ5yEhzddfSTmra/AP5G5AOvaOFAbKmvzznFMbqdYla6sISlETnmRKq+9bxpYZ4I1Z5iP3ZFz0x05NZyTk7f7T8efNjh6ZEgWyZ4dcaQ6KHmuCgMrBLAJbhUcvdF2SrSJbqgMMAR1cysuThytrw/lx125RaoiJxXlldXSnB6y1Y87PTGo+u3kE42jG2PKYStxlsAk13TAVEYT3kJOwzasw6XOWV5WKD33C9qBONcoXr/sb8aABc7klztxdpw4g3wHcXw+aL7vAbvKlMuhRCOONtBYge5CHCt4Tjq3x8hg1m6cghGHlV7VnlZyEOfm7LgC+5R0vluKSBwLzK/EVSozJHF8TXSvrOAYhRSPIeeGGp7EYRtxstFzx3dkfMVFHMkNUkojKnFwQKvuqT7FEDYfh+YNr0SDhFz75kXcUevm4u3+t/PVxx96Nn87cVTAtd1bzViJi6jjsH2g0wWGIxSWOJZfPBOZc0odx/ztinWZr3En7viHkRFW+mvm9CzBduNA6TjxqeKNHI5WaR0n2srHQg9V7XeqQ21+F4kjclvPSK7DVVlAOHfob1fizh/XX9+uR6veheBWdXgleANZyRHHEYmzJC8MMsITR7bdE2qdTLOgz3fSDPYQrFsKLTyJOzndfP/nSuSYkS9xPGWaHJGDDeiBIq4XMnJwSBztZe1OHGtMjQtXoD4b0S7OT82SdA1G3NmauMrAjziB1tFO99hKHG2mmlfRiBPovfKcxL0EJ27VE8gLcGmuyG8LcOFwkQMTRxIu2yMHS9FnZrvI0eOaa1iLnkMTh+gOtR3uCGcJ6QIQpzfwaiMGoiRAZ7AamDjFlzg6VmZE1yURZnEOoPcszlhqFkM7wJbVLwXNLnGiOYeDhUkYOmNVt+Jm0Ns0EHedd2wAGZg4xk/HWSd1RTqXuvqeB9VNIsSajc5SOQGedo4DEAehQm9z8ar/wpKMljYJMIhYaiJwkx0ZuqyHpHJN2NFEuxMnYqJ8gnxL+QupFaHnjXmN/aWC9eyaniwlcaKS1YwkGCa3Tqt6/yAfQWvmYmIMVUvKNScDsqU3D9BMonzMNXGComTG9iW4gjlRkhuwzq2WgkscjmV8iLO2VmRex8jI/wCBHU9GpD5vUzFpscGEoTHQABD4eVGhXQF34uDGswG1mfU+itEsuLD8VZqq4/q8OrRO822II/5bZVLTwGrDdMgjQBXAYBc2CnFfkR9xrGXSAYMrTGeTyaRXzLX1fnNUqSkYWr1NrrAsvlbajNWFcq86z21AnC5LmLIukBNoj5XckXOmICjiCF4qw+y3urxg5brao4ki2ZwIxJFaAB/ioH2/OlE0pkk3XFA1up5lLjTCLRDBWNskLUAZpY04fd+eF6ndll4YkSqNecFaJAJxIn6XfsSx4MERtHCWHlPEuc25ORCWuE3mOcjdHcS5x9j6lHTBfkFwicsJ/sSxg8z2chC6KjxIbW044sQns8AC+WcHncS5gWT6V8Rd3509Xqz+HJw4JQhxLHCrJTNBE+cSxzgQhjhOpBde2nWoedVGbAIQx63KhHR35PT4+Pz46M34JjhxjK87orPhVi5gwrIOATlzDnaEkjhpTruOgnvJm2K+2SASJ/YMv5Dc7EzPeBwZLQlBXB4GII7U0ipe69Q4W1U4yrudeVKZmH8MQ1zTuu4dWuYi9MeLjLismX0w/TiPneIamDe9wXq55OVvOhNHxkxqCOI6fBDisEGrN70W+EkTayCG2KX9kqcJosrOgxMndeyLLfi6XZLEggqAGauua4BBpuHVXhWsXoJEZlLPdyNuCmBedzB0J0P0zn9AoNcnNcwabqOCsNBxhmFArazq1o2K8wdIsnWk2Et/Cr0LhOgK4wGFHusMOHk5Y5IkkiUDiCfllZsurIN8UJs+MbZZB/y9Ml23F9ZIPq5MuDruMyvi9Gqlo/W8qvGJIu5Y/8s5Q5b7wHHBdD23rXDkQa1ToXXMS2E5qyO3RSI8GA8rxllPSmHVUj5fMB602XcEqjkvVJqZCb61W2vwvTOrYEF8yuT1i2De7MPzug8QoXlvWbBkK3M9WVtPSBsOaql1dHL067rm4axF0P2sf7o2Pp2ZpdR3LQOMsbbG3GDGZ/NViACsV3vFzHJU7GXHLPLejolcKtfH4/oCraPbzV43vHmR91Y3W3Z64gEv57OTal7m19VM1J2oPpCaLp6tq5PhFDd5+qDK9LuAeYP+65sLJjwaIVfm6SGfvoDFdwdquPVQrWjAlAQ9O2K92grYd7QPPoPnBnGeTM8OAFjFRllB+NVNR/0lQE+R7IBiyLH6cQCmkZasNtNaXP7uoDUjbdvyEv/mFAeCqHvtJ7AFz0HAe4lcQGT/CjuKuoAfR9xfKYHNKQ4CaNu2f0Hw8y9qHSKuyjc3NDg06BGBfujvbr8PMoGxFcoBWgc9aMbh6gwHrDVe28WHh3zUQ/XEg7MOCIw7zfY6o6k8jSayFroPrutVw2F4WEEX4icVe59flioISZ1LBXBYpLYxVRzgwcw+v218zKnhpA6Moh5W25DS2gotBmjzimd/l7UQjpVLjVdoWIsb3zWEHsd4rfkXGSkb3EGI5YiuyYEoOYiWPj0JvjUviOPsy0PJLCG/g9tF5tW57447+DhO08td+T/IBboDSu2VnzAg8tvFg+D3YNsax3OYnhLe+YZI0Orq7GuvN1EXgpb8nriQHSwDZbr/O1BbwGscG+yH3mkXCfUvz4pi2DdOkUadReInK3nuimWD+D8BmINyPKeIhJt3QOCrdfNPhhxSqCZ74E3w/d5Kf/duCDRm6TQhnoMJxDAuMBJ67pt1FdQkswUouNt1+g+X6kh9VlMYCHCcHRZ/OkKPHYmTgptVLe/dg6VLxUJMAGFEpPzPTUEdmZLWyIIpMo8+arYbq8qMmI4QUQLv/S94FKjpEJVqQtEbZO1FSttwe8aS8TggZdhqp/jabCuMGDXAckcnmJKDoOnz+O/JDFeXatptKP8rPyv+bD6RASmuC28SOXHQsb+DO2++KSyRmSYS+HpvoeeK635pdy5CoR1oiCGXjcOs4AJ7oKHAV8OdJltqfY5Li/lACbIDteadmKAgBvNAQyH08Qv3Z2mJXIA4XwvUeixz/xt3zgBqjkVXPjj99dT/ojgg+is5pAaV/m0eaGjOiAOmyY6lzD647fruABcT2n7EQeC+tt0Jjrn4R1TmMF08DwCpCpxXO9PQ81Glx27ih5Mb8FVyoU46/Pc/d1Nzxko1TeNlzNdsuKwUJHMFVCjc9W9D/2Y3zHwUU6jTvq/7IfniESEMsfU85mtUKbSppdY7iU65v0t56i7wUXIhj9b8d5DButrSX0CLWr46Gf5c8RWLH3Hfv4njNgHQ3i5xg3BR8ekf28rXdb40wBK+esVmof1iLgHYTcAcuPff5jImKFtrgfmwxwf/8S+HyBnypQm8PF/xJTV2U2ABcN9Py6xuD1dDJ0zLXUq+iIEUkDzGfE2fC6v9Xg0kZfvKXd/tyuPCclvUJUjhYh7m4o//04vkBY3FfD1MlwXJ4CudSIi5S4+49hbewh9IevvH39XZ1+EoJ0nx5AzDgXtMzQNmGNVbyW09etcdf7Y49420UsFtq5uWcWCY794OyQ6zt61uWh6oG6773bTcEYbJbSEu/OGQd/2UwmxXfO6m+HjJe8nl9gXSriin5oG6AKu4/qX/ZXHBs8AQ0gd6BER6HqgLrrvdR/+r4oIjtQT1jfyFKyDPw5fLllM0aw7cd1crTtOBsdfYegpSEOA8OyyOKvopXaGRogfqwGW32/c95yhOzAVNE67QOPtF5ysS0nSk7LhPdaRijKYjsnScyJcYNRrq74+427NWakml2HHbT9EDteEOC1xK+d/4cdrvvu3p0Tf91l59yGi4T1k9m8BBwz4NelScdbspeqAUbrvdbms/j44D+LWna9fWILyd7UnW40C5m2KQTQGHDN3+vpRrDMA29SyZ5Mj2yoY3rN/O9hgjR0Y5MQ+0dOqtvy7LmLe9GfM4gDVccg7B24W71JVuusQuHLB+I0mdJE3DdfnNSd3lzWO/1e2XD9eeMiSL2ErUiSvdPJZPL6kdQW8vykTa+o+H6/cSXJy1kvZAL29a/cfyZ3Lg89vn8t3ZGaHtzmMMHwqIR9BKvAul0/vH/p99HZi0/t3n68Omjblu4X6kMk+DR+jNfRnj/ub08sBZw8E9FrcDDrETxHazdYO1zeHmwhLFNg/09q77H948wV14+Oalz3iYdh8P2QNNGNd3Lh7o7ecWEbf7g9fSSYK76ZYtI/b27Y5IW/8/4uaH0s1Zv4U90FPsgd4TzfYBHPeUwF2X+79i71P32rEH+nizzyKbA8Pt6c1dt9V6LL8dutseFv8Pr3wmkaOeCu8AAAAASUVORK5CYII=\" alt=\"BusBooking\" class=\"BusBooking\">\n    </div>\n  \n    <div class=\"container\">\n      <label for=\"uname\"><b>Username</b></label>\n      <input type=\"text\" placeholder=\"Enter Username\" name=\"uname\" required>\n  \n      <label for=\"psw\"><b>Password</b></label>\n      <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required>\n  \n      <button type=\"submit\" id=\"s\" class=\"loginbtn\">Login</button>\n      \n        <a routerLink=\"/register\" > <button type=\"button\" class=\"registerbtn  btn-success btn-lg float-right\" data-toggle=\"modal\" data-target= \"#myModal \">\n          Register\n       </button></a> \n       \n   \n    </div>\n\n    \n<router-outlet></router-outlet>\n    ");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/landing-page/landing-page.component.html":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/landing-page/landing-page.component.html ***!
+  \************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>landing-page works!</p>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n    \n   \n    <div class=\"modal\" id=\"myModal\">\n    <div class=\"modal-dialog\">`\n    <div class=\"modal-content\">\n    <h5 class=\"modal-title\" style=\"text-align:center\">Register</h5>\n    <div class=\"modal-body\">\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-row\">\n    <div class=\"form-group col\">\n    <label >Title</label>\n    <select formControlName=\"title\"  id=\"s\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.title.errors }\">\n    <option value=\"\"></option>\n    <option value=\"Mr\">Mr</option>\n    <option value=\"Mrs\">Mrs</option>\n    <option value=\"Miss\">Miss</option>\n    <option value=\"Ms\">Ms</option>\n    </select>\n    <div *ngIf=\"submitted && f.title.errors\" class=\"invalid-feedback\">\n    <div *ngIf=\"f.title.errors.required\">Title is required</div>\n</div>\n</div>\n    <div class=\"form-group col\">\n    <label>Name</label>\n    <input type=\"text\" id=\"k\" formControlName=\"Name\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.Name.errors }\" />\n    <div *ngIf=\"submitted && f.Name.errors\" class=\"invalid-feedback\">\n    <div *ngIf=\"f.Name.errors.required\">Name is required</div>\n    </div>\n    </div>\n    </div>\n\n\n    \n    \n    <div class=\"form-group \">\n        <label>Password</label>\n        <input type=\"password\" formControlName=\"Password\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.Password.errors }\" />\n        <div *ngIf=\"submitted && f.Password.errors\" class=\"invalid-feedback\">\n            <div *ngIf=\"f.Password.errors.required\">password is required</div>\n            \n        </div>\n    </div>\n    \n            <div class=\"form-group \">\n                <label>Email</label>\n                <input type=\"text\" formControlName=\"Email\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.Email.errors }\" />\n                <div *ngIf=\"submitted && f.Email.errors\" class=\"invalid-feedback\">\n                    <div *ngIf=\"f.Email.errors.required\">Email is required</div>\n                   \n                </div>\n            </div>\n\n           \n            <div class=\"form-group \"id=\"l\">\n                <label>DOB</label>\n                <input type=\"date\" formControlName=\"DOB\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.DOB.errors }\" />\n                <div *ngIf=\"submitted && f.DOB.errors\" class=\"invalid-feedback\">\n                    <div *ngIf=\"f.DOB.errors.required\">DOB is required</div>\n                </div>\n            </div>\n            \n          <div class=\"form-group \"id=\"l\">\n            <label>Phone_no</label>\n            <input type=\"number\" formControlName=\"Phone_no\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.Phone_no.errors }\" />\n            <div *ngIf=\"submitted && f.Phone_no.errors\" class=\"invalid-feedback\">\n                <div *ngIf=\"f.Phone_no.errors.required\">Phone_no is required</div>\n            </div>\n        </div>\n          <div class=\"form-group\">\n            <label>Address</label>\n            <input type=\"Address\" formControlName=\"Address\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.Address.errors }\" />\n            <div *ngIf=\"submitted && f.Address.errors\" class=\"invalid-feedback\">\n                <div *ngIf=\"f.Address.errors.required\">Address is required</div>\n            </div>\n        </div>\n        <div class=\"form-group\" id=\"l\">\n          <label>PinCode</label>\n          <input type=\"number\" formControlName=\"PinCode\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.PinCode.errors }\" />\n          <div *ngIf=\"submitted && f.PinCode.errors\" class=\"invalid-feedback\">\n              <div *ngIf=\"f.PinCode.errors.required\">Pin is required</div>\n          </div>\n      </div>\n            <div class=\"form-group form-check\">\n                <input type=\"checkbox\" formControlName=\"acceptTerms\" id=\"acceptTerms\" class=\"form-check-input\" [ngClass]=\"{ 'is-invalid': submitted && f.acceptTerms.errors }\" />\n                <label for=\"acceptTerms\" class=\"form-check-label\">Accept Terms & Conditions</label>\n                <div *ngIf=\"submitted && f.acceptTerms.errors\" class=\"invalid-feedback\">Accept Ts & Cs is required</div>\n            </div>\n            <div class=\"modal-footer\">\n                <button class=\"btn btn-primary mr-1\">Register</button>\n                <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\" (click)=\"onReset()\">Cancel</button>\n            </div>\n        </form>\n    </div>\n    </div>\n    \n    </div>\n    </div>\n\n\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+
+
+
+
+const routes = [{ path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_3__["RegisterComponent"] }
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("form {\r\n    border: 3px solid #f1f1f1;\r\n  }\r\n  \r\n \r\n  input[type=text], input[type=password] {\r\n    width: 100%;\r\n    padding: 12px 20px;\r\n    margin: 8px 0;\r\n    display: inline-block;\r\n    border: 1px solid #ccc;\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n \r\n  .registerbtn {\r\n    padding: 14px 20px;\r\n    background-color:green;\r\n  }\r\n  \r\n \r\n  button{\r\n    background-color:blue;\r\n    color: white;\r\n    padding: 14px 20px;\r\n    margin: 8px 0;\r\n    border: none;\r\n    cursor: pointer;\r\n    width: 20%;\r\n  }\r\n  \r\n \r\n  button:hover {\r\n    opacity: 0.8;\r\n  }\r\n  \r\n \r\n  .imgcontainer {\r\n    text-align: center;\r\n    margin: 24px 0 12px 0;\r\n  }\r\n  \r\n \r\n  img.BusBooking {\r\n    width: 40%;\r\n    border-radius: 50%;\r\n  }\r\n  \r\n \r\n  .container {\r\n    padding: 16px;\r\n  }\r\n  \r\n \r\n  @media screen and (max-width: 300px) {\r\n    span.psw {\r\n      display: block;\r\n      float: none;\r\n    }\r\n    .loginbtn {\r\n        padding: 14px 20px;\r\n        width: 10%;\r\n        width: auto;\r\n    padding: 10px 18px;\r\n    \r\n      }\r\n    \r\n   \r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx5QkFBeUI7RUFDM0I7OztFQUdBO0lBQ0UsV0FBVztJQUNYLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixzQkFBc0I7RUFDeEI7OztFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLHNCQUFzQjtFQUN4Qjs7O0VBRUQ7SUFDRyxxQkFBcUI7SUFDckIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2IsWUFBWTtJQUNaLGVBQWU7SUFDZixVQUFVO0VBQ1o7OztFQUdBO0lBQ0UsWUFBWTtFQUNkOzs7RUFLQTtJQUNFLGtCQUFrQjtJQUNsQixxQkFBcUI7RUFDdkI7OztFQUdBO0lBQ0UsVUFBVTtJQUNWLGtCQUFrQjtFQUNwQjs7O0VBR0E7SUFDRSxhQUFhO0VBQ2Y7OztFQUVBO0lBQ0U7TUFDRSxjQUFjO01BQ2QsV0FBVztJQUNiO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsVUFBVTtRQUNWLFdBQVc7SUFDZixrQkFBa0I7O01BRWhCOzs7RUFHSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZm9ybSB7XHJcbiAgICBib3JkZXI6IDNweCBzb2xpZCAjZjFmMWYxO1xyXG4gIH1cclxuICBcclxuIFxyXG4gIGlucHV0W3R5cGU9dGV4dF0sIGlucHV0W3R5cGU9cGFzc3dvcmRdIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgcGFkZGluZzogMTJweCAyMHB4O1xyXG4gICAgbWFyZ2luOiA4cHggMDtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gIH1cclxuICAucmVnaXN0ZXJidG4ge1xyXG4gICAgcGFkZGluZzogMTRweCAyMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjpncmVlbjtcclxuICB9XHJcbiBcclxuIGJ1dHRvbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6Ymx1ZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDE0cHggMjBweDtcclxuICAgIG1hcmdpbjogOHB4IDA7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICB3aWR0aDogMjAlO1xyXG4gIH1cclxuICBcclxuICBcclxuICBidXR0b246aG92ZXIge1xyXG4gICAgb3BhY2l0eTogMC44O1xyXG4gIH1cclxuICBcclxuXHJcbiAgXHJcblxyXG4gIC5pbWdjb250YWluZXIge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgbWFyZ2luOiAyNHB4IDAgMTJweCAwO1xyXG4gIH1cclxuICBcclxuICBcclxuICBpbWcuQnVzQm9va2luZyB7XHJcbiAgICB3aWR0aDogNDAlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIH1cclxuICBcclxuIFxyXG4gIC5jb250YWluZXIge1xyXG4gICAgcGFkZGluZzogMTZweDtcclxuICB9XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDMwMHB4KSB7XHJcbiAgICBzcGFuLnBzdyB7XHJcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgICBmbG9hdDogbm9uZTtcclxuICAgIH1cclxuICAgIC5sb2dpbmJ0biB7XHJcbiAgICAgICAgcGFkZGluZzogMTRweCAyMHB4O1xyXG4gICAgICAgIHdpZHRoOiAxMCU7XHJcbiAgICAgICAgd2lkdGg6IGF1dG87XHJcbiAgICBwYWRkaW5nOiAxMHB4IDE4cHg7XHJcbiAgICBcclxuICAgICAgfVxyXG4gICAgXHJcbiAgIFxyXG4gIH0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AppComponent = class AppComponent {
+    constructor() {
+        this.title = 'BusBooking';
+    }
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")).default]
+    })
+], AppComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./landing-page/landing-page.component */ "./src/app/landing-page/landing-page.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+
+
+
+
+
+
+
+let AppModule = class AppModule {
+};
+AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+            _landing_page_landing_page_component__WEBPACK_IMPORTED_MODULE_6__["LandingPageComponent"],
+            _register_register_component__WEBPACK_IMPORTED_MODULE_7__["RegisterComponent"]
+        ],
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"]
+        ],
+        providers: [],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+    })
+], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/landing-page/landing-page.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/landing-page/landing-page.component.css ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xhbmRpbmctcGFnZS9sYW5kaW5nLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/landing-page/landing-page.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/landing-page/landing-page.component.ts ***!
+  \********************************************************/
+/*! exports provided: LandingPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LandingPageComponent", function() { return LandingPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let LandingPageComponent = class LandingPageComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+LandingPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-landing-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./landing-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/landing-page/landing-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./landing-page.component.css */ "./src/app/landing-page/landing-page.component.css")).default]
+    })
+], LandingPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/register/register.component.css ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("#s{\r\n    width: 80px;\r\n}\r\n#k{\r\n    width: 376px;\r\n    align-self: left;\r\n  \r\n}\r\n#l{\r\n    width: 180px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksWUFBWTtJQUNaLGdCQUFnQjs7QUFFcEI7QUFDQTtJQUNJLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3N7XHJcbiAgICB3aWR0aDogODBweDtcclxufVxyXG4ja3tcclxuICAgIHdpZHRoOiAzNzZweDtcclxuICAgIGFsaWduLXNlbGY6IGxlZnQ7XHJcbiAgXHJcbn1cclxuI2x7XHJcbiAgICB3aWR0aDogMTgwcHg7XHJcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _registration_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../registration.service */ "./src/app/registration.service.ts");
+
+
+
+
+let RegisterComponent = class RegisterComponent {
+    constructor(formBuilder, postdata) {
+        this.formBuilder = formBuilder;
+        this.postdata = postdata;
+        this.submitted = false;
+    }
+    ngOnInit() {
+        this.registerForm = this.formBuilder.group({
+            title: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            Name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            Password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            Email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email]],
+            DOB: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            Phone_no: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            Address: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            PinCode: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            acceptTerms: [false, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].requiredTrue],
+        });
+    }
+    // convenience getter for easy access to form fields
+    get f() { return this.registerForm.controls; }
+    onSubmit() {
+        this.submitted = true;
+        // stop here if form is invalid
+        if (this.registerForm.invalid) {
+            return;
+        }
+        // display form values on success
+        this.postdata1 = "{\"Email\" :" + "\"" + this.registerForm.value.Email + "\"" + "," +
+            "\"Name\" :" + "\"" + this.registerForm.value.Name + "\"" + "," +
+            "\"Password\" :" + "\"" + this.registerForm.value.Password + "\"" + "," +
+            "\"DOB\" :" + "\"" + this.registerForm.value.DOB + "\"" + "," +
+            "\"Phone_no\" :" + "\"" + this.registerForm.value.Phone_no + "\" " + "," +
+            "\"Address\" :" + "\"" + this.registerForm.value.Address + "\"" + "," +
+            "\"PinCode\":" + "\"" + this.registerForm.value.PinCode + "\"" + "}";
+        this.postdata.postdatabk(this.postdata1).subscribe(data => {
+            console.log("data posted succesuflly");
+        });
+    }
+    onReset() {
+        this.submitted = false;
+        this.registerForm.reset();
+    }
+    findElement(arr, propName, propValue) {
+        for (var i = 0; i < arr.length; i++)
+            if (arr[i][propName] == propValue)
+                return arr[i]["id"];
+    }
+};
+RegisterComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _registration_service__WEBPACK_IMPORTED_MODULE_3__["RegistrationService"] }
+];
+RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-register',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./register.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/register/register.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./register.component.css */ "./src/app/register/register.component.css")).default]
+    })
+], RegisterComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/registration.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/registration.service.ts ***!
+  \*****************************************/
+/*! exports provided: RegistrationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistrationService", function() { return RegistrationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let RegistrationService = class RegistrationService {
+    constructor(http) {
+        this.http = http;
+    }
+    postdatabk(data) {
+        return this.http.post("http://localhost:8080", data);
+    }
+};
+RegistrationService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+RegistrationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], RegistrationService);
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+
+const environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+    .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node ./src/main.ts ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\1735082\BusBooking\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node");
+module.exports = __webpack_require__(/*! C:\Users\1735082\BusBooking\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

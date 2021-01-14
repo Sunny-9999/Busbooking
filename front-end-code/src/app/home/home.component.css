@@ -1,0 +1,19 @@
+li  a{
+    display: block;
+    float: left;
+    padding: 10px 90px;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    font-size: x-large;
+    
+   
+  }
+  ul {
+    list-style-type: none;
+  background-color:blueviolet;
+  overflow: hidden;
+}
+h3{
+  text-align: center;
+}
