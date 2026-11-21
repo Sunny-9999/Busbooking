@@ -18,9 +18,10 @@ jobs:
           python-version: "3.12"
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
       - run: python3 -m unittest discover -s evalkit/tests
       - run: node portfolio/search/verify.mjs
+      - run: npm --prefix app test
       - name: Compare patches across the dataset
         run: |
           node evalkit/predict.mjs a > /tmp/busbooking-a.jsonl

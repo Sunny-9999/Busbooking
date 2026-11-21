@@ -79,6 +79,7 @@ bookaticket(bus_id,nop)
 }
 searchbtn(){
   
+this.temp.length = 0;
 let count=0;
 var k=0;
 var form1;
@@ -97,7 +98,7 @@ for(let i=0;i<this.bb.length;i++){
   }
 }
 
-if(count=0){
+if(count===0){
   Swal1.fire({
     type:'Regret',
     text:'No Buses found with ParticularS',
