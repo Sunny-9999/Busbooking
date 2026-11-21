@@ -2,7 +2,15 @@
 
 I'm Venkat Krishna Sai M, a backend engineer working with Java, Python, and Spring Boot. I take on freelance work in code review, AI coding evaluation, rubric design, and generalist engineering tasks that require tracing behavior across a codebase.
 
-Busbooking is a Java/Spring Boot and Angular application with bus search and booking flows. It doubles as a public work sample for how I turn a source finding into a reproducible check, review proposed changes, and explain a decision against explicit criteria.
+Busbooking 2.0 is a modular booking demo with a responsive frontend, a Node.js API, SQLite reservations, and a repository assistant. The legacy Java/Spring Boot and Angular app provides the baseline for the code review and evaluation examples.
+
+## Run the booking app
+
+```sh
+npm --prefix app start
+```
+
+Open [http://127.0.0.1:3000](http://127.0.0.1:3000) to search routes, reserve seats, view or cancel a reservation, and ask the repository assistant about the benchmark. See the [app setup and module guide](app/README.md).
 
 ## Run the toolkit
 
@@ -26,6 +34,6 @@ The runner exercises the search method with stand-ins for Angular dependencies. 
 
 ## Contribute
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for test commands and contribution guidelines. The new evaluation toolkit, synthetic dataset, portfolio material, and evaluation workflow are covered by the [MIT License](licenses/MIT-evalkit.txt). The legacy application directories and assets did not include a license at the baseline. Their redistribution rights require review before applying a repo-wide license.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for test commands and contribution guidelines. The new booking app, evaluation toolkit, synthetic dataset, portfolio material, and evaluation workflow are covered by the [MIT License](licenses/MIT-evalkit.txt). The legacy application directories and assets did not include a license at the baseline. Their redistribution rights require review before applying a repo-wide license.
 
 [Short application pitch](portfolio/application-pitch.md)
