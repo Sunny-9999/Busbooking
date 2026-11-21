@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172d26">
+  <title>Busbooking | Find your next ride</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/main.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="/" aria-label="Busbooking home"><span class="mark" aria-hidden="true">B</span> Busbooking</a>
+      <nav aria-label="Main navigation">
+        <a href="#search">Find buses</a>
+        <button type="button" id="open-bookings">My bookings</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="search">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">INTERCITY BUS TRAVEL</p>
+          <h1>Find your<br>next ride.</h1>
+          <p class="intro">Search routes across Karnataka, compare departures, and reserve seats in a few steps.</p>
+        </div>
+        <div class="route-art" aria-hidden="true">
+          <div class="route-city"><span></span><div><small>DEPARTURE</small>Bengaluru</div></div>
+          <div class="route-line"></div>
+          <div class="route-city"><span></span><div><small>ARRIVAL</small>Mysuru</div></div>
+        </div>
+      </div>
+    </section>
+    <div class="wrap content">
+      <form id="search-form" class="search-card">
+        <label>From<select name="origin" required></select></label>
+        <button id="swap" class="swap" type="button" aria-label="Swap origin and destination">⇄</button>
+        <label>To<select name="destination" required></select></label>
+        <label>Travel date<input name="day" type="date" required></label>
+        <label>Seats<select name="quantity">
+          <option>1</option><option>2</option><option>3</option>
+          <option>4</option><option>5</option><option>6</option>
+        </select></label>
+        <button class="primary" type="submit">Search buses</button>
+      </form>
+      <section class="results" aria-labelledby="results-title">
+        <div class="results-head">
+          <div><p class="eyebrow">DEPARTURES</p><h2 id="results-title">Available buses</h2></div>
+          <label>Sort by<select id="sort">
+            <option value="departure">Departure time</option><option value="fare">Lowest fare</option>
+          </select></label>
+        </div>
+        <p id="status" role="status">Loading routes…</p>
+        <div id="trips"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap footer">
+    <p>Demo routes and fares. No payments are collected.</p>
+    <button type="button" id="open-chat">Repository assistant</button>
+  </footer>
+  <dialog id="booking-dialog" aria-labelledby="reserve-title">
+    <div class="dialog-head"><h2 id="reserve-title">Reserve seats</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
+    <div id="booking-summary"></div>
+    <p id="booking-status" role="status"></p>
+    <button type="button" class="primary" id="confirm-booking">Confirm demo booking</button>
+  </dialog>
+  <dialog id="bookings-dialog" aria-labelledby="bookings-title">
+    <div class="dialog-head"><h2 id="bookings-title">My bookings</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
+    <p id="bookings-status" role="status"></p>
+    <div id="bookings-list"></div>
+  </dialog>
+  <dialog id="chat-dialog" aria-labelledby="chat-title">
+    <div class="dialog-head"><h2 id="chat-title">Repository assistant</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
+    <p>Ask about the code reviews, evaluation rubric, or benchmark.</p>
+    <form id="chat-form">
+      <label>Question<input name="question" placeholder="How are candidates scored?" maxlength="500" required></label>
+      <button class="primary" type="submit">Ask</button>
+    </form>
+    <div id="chat-answer" role="status"></div>
+  </dialog>
+</body>
+</html>
