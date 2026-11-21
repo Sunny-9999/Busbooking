@@ -1,7 +1,10 @@
-export async function request(path, { method = 'GET', data } = {}) {
+export async function request(path, { method = 'GET', data, token } = {}) {
   const response = await fetch(`/api/${path}`, {
     method,
-    headers: data ? { 'Content-Type': 'application/json' } : undefined,
+    headers: {
+      ...(data && { 'Content-Type': 'application/json' }),
+      ...(token && { Authorization: `Bearer ${token}` }),
+    },
     body: data ? JSON.stringify(data) : undefined,
   });
   const result = await response.json();

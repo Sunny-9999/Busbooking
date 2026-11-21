@@ -2,6 +2,8 @@ const rupees = new Intl.NumberFormat('en-IN', {
   style: 'currency', currency: 'INR', maximumFractionDigits: 0,
 });
 
+export const money = (amount) => rupees.format(amount);
+
 export function element(tag, text, className) {
   const item = document.createElement(tag);
   if (text !== undefined) item.textContent = text;
@@ -29,6 +31,10 @@ export function bookingDetails(booking) {
   const details = element('div');
   details.append(element('h3', trip.operator),
     element('p', `${trip.origin} to ${trip.destination} · ${day} at ${trip.departure}`),
-    element('p', `${quantity} ${quantity === 1 ? 'seat' : 'seats'} · ${rupees.format(trip.fare * quantity)}`));
+    element('p', `${quantity} ${quantity === 1 ? 'seat' : 'seats'} · ${rupees.format(booking.price?.total ?? trip.fare * quantity)}`));
+  if (booking.seats?.length) {
+    details.append(element('p', `Seats ${booking.seats.join(', ')}`),
+      element('p', `Board at ${booking.boarding} · Drop off at ${booking.dropping}`, 'detail'));
+  }
   return details;
 }
