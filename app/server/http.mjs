@@ -1,4 +1,4 @@
-import { randomUUID } from 'node:crypto';
+import { createHash, randomUUID, timingSafeEqual } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
@@ -9,7 +9,7 @@ const root = fileURLToPath(new URL('../../', import.meta.url));
 const assets = new Map([
   ['/', ['index.html', 'text/html; charset=utf-8']],
   ['/styles.css', ['styles.css', 'text/css; charset=utf-8']],
-  ...['main', 'api', 'render'].map((name) => [`/${name}.mjs`, [`${name}.mjs`, 'text/javascript; charset=utf-8']]),
+  ...['main', 'api', 'render', 'admin', 'seats'].map((name) => [`/${name}.mjs`, [`${name}.mjs`, 'text/javascript; charset=utf-8']]),
 ]);
 
 function json(response, status, value) {
@@ -64,7 +64,9 @@ function askRepository(question) {
   });
 }
 
-export function createApp(store, { ask = askRepository } = {}) {
+export function createApp(store, { ask = askRepository, adminToken = process.env.BUSBOOKING_ADMIN_TOKEN } = {}) {
+  const hash = (value) => createHash('sha256').update(value).digest();
+  const adminKey = adminToken && adminToken.length >= 24 ? hash(adminToken) : null;
   let chatBusy = false;
   return createServer(async (request, response) => {
     try {
@@ -99,16 +101,48 @@ export function createApp(store, { ask = askRepository } = {}) {
         validateDay(day);
         validateQuantity(quantity);
         json(response, 200, store.search(origin, destination, day, quantity));
+      } else if (method === 'GET' && /^\/api\/trips\/\d+$/.test(pathname)) {
+        const day = searchParams.get('day');
+        const quantity = Number(searchParams.get('quantity'));
+        validateDay(day);
+        validateQuantity(quantity);
+        json(response, 200, store.details(Number(pathname.split('/').at(-1)), day, quantity));
+      } else if (pathname.startsWith('/api/admin/')) {
+        if (!adminKey) throw new BookingError(503, 'Admin is disabled on this server.');
+        const authorization = request.headers.authorization ?? '';
+        if (!timingSafeEqual(adminKey, hash(authorization.slice(7))) || !authorization.startsWith('Bearer ')) {
+          throw new BookingError(401, 'Enter the configured admin key.');
+        }
+        if (method === 'GET' && pathname === '/api/admin/services') {
+          const day = searchParams.get('day');
+          validateDay(day);
+          json(response, 200, store.admin(day));
+        } else if (method === 'PATCH' && /^\/api\/admin\/services\/\d+$/.test(pathname)) {
+          const { fare } = await readJson(request);
+          if (!Number.isInteger(fare) || fare < 100 || fare > 10000) {
+            throw new BookingError(400, 'Base fare must be between ₹100 and ₹10,000.');
+          }
+          store.updateFare(Number(pathname.split('/').at(-1)), fare);
+          json(response, 200, { fare });
+        } else {
+          throw new BookingError(404, 'Admin route not found.');
+        }
       } else if (method === 'GET' && pathname === '/api/bookings') {
         json(response, 200, store.bookings(owner));
       } else if (method === 'POST' && pathname === '/api/bookings') {
-        const { serviceId, day, quantity, requestId } = await readJson(request);
+        const { serviceId, day, quantity, requestId, seats, boarding, dropping, expectedTotal } = await readJson(request);
         validateDay(day);
         validateQuantity(quantity);
         if (typeof requestId !== 'string' || !/^[a-f0-9-]{36}$/.test(requestId)) {
           throw new BookingError(400, 'A valid request ID is required.');
         }
-        json(response, 200, store.book(owner, requestId, serviceId, day, quantity));
+        if (!Array.isArray(seats) || seats.length !== quantity || new Set(seats).size !== quantity
+            || seats.some((seat) => typeof seat !== 'string' || !/^[1-5][A-D]$/.test(seat))
+            || typeof boarding !== 'string' || typeof dropping !== 'string' || !Number.isInteger(expectedTotal)) {
+          throw new BookingError(400, 'Select the requested seats and confirm a fare quote.');
+        }
+        json(response, 200, store.book(owner, requestId, serviceId, day, quantity,
+          { seats, boarding, dropping, expectedTotal }));
       } else if (method === 'DELETE' && /^\/api\/bookings\/[a-f0-9-]{36}$/.test(pathname)) {
         json(response, 200, store.cancel(owner, pathname.split('/').at(-1)));
       } else if (method === 'POST' && pathname === '/api/chat') {

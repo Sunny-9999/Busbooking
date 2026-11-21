@@ -59,11 +59,23 @@
   </main>
   <footer class="wrap footer">
     <p>Demo routes and fares. No payments are collected.</p>
+    <button type="button" id="open-admin">Operator admin</button>
     <button type="button" id="open-chat">Repository assistant</button>
   </footer>
   <dialog id="booking-dialog" aria-labelledby="reserve-title">
     <div class="dialog-head"><h2 id="reserve-title">Reserve seats</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
     <div id="booking-summary"></div>
+    <div id="seat-checkout" hidden>
+      <h3>Choose your seats</h3>
+      <p class="detail">Available seats are outlined. Booked seats are disabled.</p>
+      <div id="seat-map" aria-label="Seat map"></div>
+      <div class="stop-fields">
+        <label>Boarding point<select id="boarding"></select></label>
+        <label>Drop-off point<select id="dropping"></select></label>
+      </div>
+      <div id="fare-breakdown"></div>
+      <button type="button" id="refresh-quote">Refresh seats and fare</button>
+    </div>
     <p id="booking-status" role="status"></p>
     <button type="button" class="primary" id="confirm-booking">Confirm demo booking</button>
   </dialog>
@@ -71,6 +83,16 @@
     <div class="dialog-head"><h2 id="bookings-title">My bookings</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
     <p id="bookings-status" role="status"></p>
     <div id="bookings-list"></div>
+  </dialog>
+  <dialog id="admin-dialog" aria-labelledby="admin-title">
+    <div class="dialog-head"><h2 id="admin-title">Operator admin</h2><form method="dialog"><button aria-label="Close">×</button></form></div>
+    <form id="admin-form" class="stop-fields">
+      <label>Admin key<input name="key" type="password" autocomplete="off" required></label>
+      <label>Travel date<input name="day" type="date" required></label>
+      <button type="submit" class="primary">Load services</button>
+    </form>
+    <p id="admin-status" role="status"></p>
+    <div id="admin-services"></div>
   </dialog>
   <dialog id="chat-dialog" aria-labelledby="chat-title">
     <div class="dialog-head"><h2 id="chat-title">Repository assistant</h2><form method="dialog"><button aria-label="Close">×</button></form></div>

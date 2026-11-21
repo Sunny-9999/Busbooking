@@ -70,3 +70,12 @@ dialog p { margin: .8rem 0; line-height: 1.45; }
   .trip { grid-template-columns: 1fr 1fr; gap: .8rem; }
   .footer { align-items: flex-start; flex-direction: column; }
 }
+#seat-map { display: grid; grid-template-columns: repeat(2, minmax(2.5rem, 1fr)) 1.2rem repeat(2, minmax(2.5rem, 1fr)); gap: .55rem; max-width: 320px; margin: 1rem auto; }
+.seat:nth-child(4n + 3) { grid-column: 4; }
+.seat[aria-pressed="true"] { background: #234639; color: white; }
+.seat:disabled { background: #e9ece6; color: #546259; cursor: default; }
+.stop-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; align-items: end; }
+.fare-list { display: grid; grid-template-columns: 1fr auto; gap: .45rem .85rem; padding: .85rem; background: #f1f4ed; border-radius: .6rem; }
+.fare-list dd { margin: 0; text-align: right; }
+.fare-list :nth-last-child(-n+2) { font-weight: 800; }
+@media (max-width: 560px) { .stop-fields { grid-template-columns: 1fr; } }

@@ -1,4 +1,6 @@
 import { request } from './api.mjs';
+import { setupAdmin } from './admin.mjs';
+import { setupSeatCheckout } from './seats.mjs';
 import { bookingDetails, element, tripCard } from './render.mjs';
 
 const byId = (id) => document.getElementById(id);
@@ -6,7 +8,6 @@ const form = byId('search-form');
 const searchButton = form.querySelector('[type=submit]');
 const filters = form.elements;
 const status = byId('status');
-const bookingDialog = byId('booking-dialog');
 const bookingsDialog = byId('bookings-dialog');
 const dateInput = filters.namedItem('day');
 const originInput = filters.namedItem('origin');
@@ -15,7 +16,7 @@ dateInput.min = new Date().toISOString().slice(0, 10);
 dateInput.max = new Date(Date.now() + 90 * 86400000).toISOString().slice(0, 10);
 dateInput.value = dateInput.min;
 let current = null;
-let selected = null;
+setupAdmin(dateInput.min, dateInput.max);
 
 function displayTrips() {
   const target = byId('trips');
@@ -45,15 +46,10 @@ async function search(query) {
   }
 }
 
-function showReservation(trip) {
-  const { query } = current;
-  selected = { serviceId: trip.id, day: query.day, quantity: Number(query.quantity),
-    requestId: crypto.randomUUID() };
-  byId('booking-status').textContent = '';
-  byId('confirm-booking').hidden = false;
-  byId('booking-summary').replaceChildren(bookingDetails({ ...selected, trip }));
-  bookingDialog.showModal();
-}
+const showReservation = setupSeatCheckout(
+  () => current?.query,
+  () => current && search(current.query),
+);
 
 async function refreshBookings() {
   const list = byId('bookings-list');
@@ -89,21 +85,6 @@ async function refreshBookings() {
     feedback.textContent = error.message;
   }
 }
-
-byId('confirm-booking').addEventListener('click', async (event) => {
-  const button = event.currentTarget;
-  button.disabled = true;
-  try {
-    const booking = await request('bookings', { method: 'POST', data: selected });
-    byId('booking-status').textContent = `Reservation confirmed. Reference ${booking.id.slice(0, 8).toUpperCase()}.`;
-    button.hidden = true;
-    if (current) await search(current.query);
-  } catch (error) {
-    byId('booking-status').textContent = error.message;
-  } finally {
-    button.disabled = false;
-  }
-});
 
 byId('open-bookings').addEventListener('click', () => {
   bookingsDialog.showModal();
