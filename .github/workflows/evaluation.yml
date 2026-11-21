@@ -1,0 +1,36 @@
+name: Evaluation toolkit
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: python3 -m unittest discover -s evalkit/tests
+      - run: node portfolio/search/verify.mjs
+      - name: Compare patches across the dataset
+        run: |
+          node evalkit/predict.mjs a > /tmp/busbooking-a.jsonl
+          node evalkit/predict.mjs b > /tmp/busbooking-b.jsonl
+          python3 -m evalkit compare /tmp/busbooking-a.jsonl /tmp/busbooking-b.jsonl > /tmp/busbooking-report.json
+          python3 - <<'PY'
+          import json
+          with open("/tmp/busbooking-report.json") as report:
+              result = json.load(report)
+          assert result["A"]["overall"] == dict(cases=48000, submitted=48000, passed=24000), result
+          assert result["B"]["overall"] == dict(cases=48000, submitted=48000, passed=48000), result
+          assert result["outcome"] == "B", result
+          PY

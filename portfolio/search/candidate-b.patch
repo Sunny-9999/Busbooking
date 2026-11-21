@@ -1,0 +1,7 @@
+--- a/front-end-code/src/app/bus-booking/bus-booking.component.ts
++++ b/front-end-code/src/app/bus-booking/bus-booking.component.ts
+@@ -81,0 +82 @@
++this.temp.length = 0;
+@@ -100 +101 @@
+-if(count=0){
++if(count===0){

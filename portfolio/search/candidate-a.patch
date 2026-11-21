@@ -1,0 +1,5 @@
+--- a/front-end-code/src/app/bus-booking/bus-booking.component.ts
++++ b/front-end-code/src/app/bus-booking/bus-booking.component.ts
+@@ -100 +100 @@
+-if(count=0){
++if(count===0){
